@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+
+            background-image: url("img/event.avif");
+            background: cover;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+        .infotbl{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table,th,td {
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border: 2px solid red;
+            padding: 10px; */
+            color: white;
+            border: 3px solid yellow;
+            padding: 10px 20px;
+            border-collapse: collapse;
+            font-size: larger;
+            
+        }
+        table > caption{
+            margin: 20px 0px;
+        }
+
+        /* thead > tr{
+            border: 2px solid black;
+            padding: 10px 10px;
+        } */
+        caption{
+            font-size:50px;
+            color:red;
+        }
+    </style>
+</head>
+<!-- <?php include ('nav.html');?> -->
+<header>
+    <div class="container">
+      <div class="logo-box">
+        <a href="/">
+          <img src="">
+        </a>
+      </div>
+      <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="">work</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="timetable.html">Timing</a></li>
+        <li><a href="form.html">contact</a></li>
+     </ul>
+    </nav>
+    </div>
+  </header>
+
+<body>
+    <div class="infotbl">
+    <table>
+        <caption>Event Timing</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th> Event name</th>
+                <th>Date</th>
+                <th>Time(from)</th>
+                <th>Time(to)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hackthon Competition</td>
+                <td>1 april 2024</td>
+                <td>9:00 AM</td>
+                <td>9:00 PM</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Coding Competition</td>
+                <td>2 april 2024</td>
+                <td>9:30 pm</td>
+                <td>5:30 PM</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lan Gaming</td>
+                <td>2 april 2024</td>
+                <td>2:30 pm</td>
+                <td>5:30 PM</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Project Expo</td>
+                <td>2 april 2024</td>
+                <td>2:30 pm</td>
+                <td>5:30PM</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Quiz Competition</td>
+                <td>2 april 2024</td>
+                <td>2:30 pm</td>
+                <td>5:30PM</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+
+</html>

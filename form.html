@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        body{
+            background-image: url("img/form.jpg");
+            background: cover;
+            background-size: 100% 100%;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .f1{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-top: 60px;
+           position: relative;
+           
+        }
+        .f1 form{
+            width: 500px;
+            height: 600px;
+            background-color: blueviolet;
+            padding: 60px 30px;
+            justify-content: space-evenly;
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+            box-shadow: 5px 10px rgba(0, 0, 0, 0.562);
+            
+        }
+        input{
+            width: 100%;
+            height: 40px;
+            border: 1px solid aqua;
+            border-radius: 5px;
+            padding-left: 10px;
+            font-size: 25px;
+        }
+        .in button{
+            width: 120px;
+            height: 50px;
+            font-size: 20px;
+            background-color: orangered;
+            margin-left: 150px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .in label{
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        .hed label{
+            font-size: 40px;
+            color:orangered;
+            padding-left: 60px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <?php include ('nav.html');?> -->
+    <link rel="stylesheet" href="nav.css">
+<header>
+    <div class="container">
+      <div class="logo-box">
+        <a href="/">
+          <img src="">
+        </a>
+      </div>
+      <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="">work</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="timetable.html">Timing</a></li>
+        <li><a href="form.html">contact</a></li>
+     </ul>
+    </nav>
+    </div>
+  </header>
+    <div class="f1">
+        <form action="submit.php" method="post" >
+            <div class="hed"><label for="">Contact us</label></div>
+            <div class="in">
+                <label for="">Name:</label><br>
+                <input type="text" id="name" name="name"placeholder="name" required>
+            </div>
+            <div class="in">
+                <label for="">Email:</label><br>
+                <input type="text" id="email" name="email"placeholder="email" required>
+            </div>
+            <div class="in">
+                <label for="">Department:</label><br>
+                <input type="text" id="dept" name="dept"placeholder="department" required>
+            </div>
+            <div class="in">
+                <label for="">Address:</label><br>
+                <input type="text" id="add" name="add"placeholder="address" required>
+            </div>
+            <div class="in">
+                <label for="">Mobile no:</label><br>
+                <input type="text" id="mob" name="mob"placeholder="mobile no" required>
+            </div>
+            <div class="in">
+            <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
