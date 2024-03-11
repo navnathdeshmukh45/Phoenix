@@ -91,7 +91,7 @@
     </div>
   </header>
     <div class="f1">
-        <form action="" method="post" name="Contact us">
+        <form action="" method="post" name="Contactus">
             <div class="hed" ><label for="">Contact us</label></div>
             <div class="in">
                 <label for="">Name:</label><br>
@@ -114,7 +114,7 @@
                 <input type="text" id="mob" name="mob"placeholder="mobile no" required>
             </div>
             <div class="in">
-            <button type="Submit">Submit</button>
+            <button type="submit">Submit</button>
             </div>
         </form>
     </div>
@@ -122,9 +122,9 @@
         
        
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx7EJ-gj2JvGqZoOQNMGpkrglK3ksNOhoocZPjMwSLEPGntfDO_mX7wkavbqx7ntL2T/exec'
-        const form = document.forms['Contact us']
+        const form = document.forms['Contactus']
       
-        form.addEventListener('Submit', e => {
+        form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => alert("Thank you! your form is submitted successfully." ))
