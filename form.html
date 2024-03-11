@@ -114,7 +114,7 @@
                 <input type="text" id="mob" name="mob"placeholder="mobile no" required>
             </div>
             <div class="in">
-            <button type="button" onclick="click_handler">Submit</button>
+            <button type="Submit">Submit</button>
             </div>
         </form>
     </div>
@@ -124,7 +124,7 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbx7EJ-gj2JvGqZoOQNMGpkrglK3ksNOhoocZPjMwSLEPGntfDO_mX7wkavbqx7ntL2T/exec'
         const form = document.forms['Contact us']
       
-        form.addEventListener('submit', e => {
+        form.addEventListener('Submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => alert("Thank you! your form is submitted successfully." ))
